@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2</title>
+</head>
+<body>
+    
+
+    <h1 style="background-color: rgb(177, 207, 231);"><b>A Importância da Citação e da Formatação no Texto</b></h1>
+    <p>A escrita bem estruturada e formatada melhora a <b>compreensão</b> do leitor. Utilizar elementos como <i>itálico</i>, <u>sublinhado</u> e <s>taxado</s> pode destacar trechos importantes do texto.</p>
+    <p>Na química, por exemplo, a água é representada por H<sub>2</sub>O, enquanto em matemática, um expoente pode ser expresso como x<sup>2</sup>.</p>
+
+        <hr>
+<h2 style="color: rgba(180, 3, 3, 0.76);"> <b>O poder das citações</b></h2>
+<blockquote cite="https://www.pensador.com/frase/MTEzMTU/">
+“O Sucesso é ir de fracasso em fracasso sem perder o entusiasmo.” - Winston Churchill
+</blockquote>
+<p>As citações nos ajudam a refletir e aprender com os ensinamentos de grandes pensadores. Como disse alguém certa vez: "A vida é feita de escolhas".
+<p>Por fim, compreender o significado de siglas e abreviações é essencial. Voce já ouviu falar sobre <u>HTML</u>? Ele é a base da contrução de páginas na web!</p>
+
+
+    <hr>
+<h2 style="color: rgba(23, 83, 7, 0.76);">Exemplo de um código escrito na liguagem C</h2>
+<b>
+<pre>
+    #include
+
+        int main() {
+            int num1, num2, soma;
+
+            printf("Digite o primeiro número:"); 
+            scanf("%d", &num1);
+
+            printf("Digite o segundo número:");
+            scanf("%d", &num2);
+
+
+            soma = num1 + num2;
+
+
+            printf("A soma de %d e %d é %d.\n", num1, num2, soma);
+            
+            return 0;
+        }
+            </pre>
+        </b>
+</body>
+</html>
