@@ -1,0 +1,49 @@
+/*Seletor do tipo: tag*/
+h1, h2 {
+    color: white;
+    text-align: center;
+    /*text-decoration-line: line-through;*/
+}
+
+/*Seletor de classe*/
+.data {
+    text-align: center;
+    color: white;
+}
+
+/*Seletor do tipo: id*/
+#aula7 {
+    font-size: 50px;
+    text-align: center;
+    color: #1bce80;
+}
+
+/*Seletor do tipo: descendente*/
+.conteudo p {
+    color: green;
+}
+
+.conteudo h3 {
+    color: blue;
+}
+
+/*
+seletor universal
+* {
+    margin: 0;
+    padding: 0;
+}
+*/
+
+body {
+    background-color: lightgrey;
+}
+
+body {
+    background-image: url("plano-fundo.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
