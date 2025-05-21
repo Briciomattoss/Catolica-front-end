@@ -1,49 +1,116 @@
-/*Seletor do tipo: tag*/
-h1, h2 {
-    color: white;
-    text-align: center;
-    /*text-decoration-line: line-through;*/
-}
-
-/*Seletor de classe*/
-.data {
-    text-align: center;
-    color: white;
-}
-
-/*Seletor do tipo: id*/
-#aula7 {
-    font-size: 50px;
-    text-align: center;
-    color: #1bce80;
-}
-
-/*Seletor do tipo: descendente*/
-.conteudo p {
-    color: green;
-}
-
-.conteudo h3 {
-    color: blue;
-}
-
-/*
-seletor universal
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
-}
-*/
-
-body {
-    background-color: lightgrey;
+    box-sizing: border-box;
 }
 
 body {
-    background-image: url("plano-fundo.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
+    height: 100vh;
+    background: url('plano-d-fundo.jpg') no-repeat center center fixed;
     background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
 }
 
+/* Título */
+.titulo {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 22px;
+    text-shadow: 1px 1px 3px #000;
+}
 
+/* Container do formulário */
+.formulario1 {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    max-width: 380px;
+    width: 100%;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+/* Estilo dos elementos do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, span {
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    padding: 8px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Grupo de opções */
+.opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.opcao-box {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0;
+}
+
+/* Botão */
+input[type="submit"] {
+    margin-top: 12px;
+    padding: 10px 18px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    align-self: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"]:hover {
+    background-color: #5146d8;
+    transform: scale(1.04);
+}
