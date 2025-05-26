@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de Display, Flexbox e Grid</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        /* Exemplos de display */
+        .exemplo-display {
+            margin-bottom: 30px;
+        }
+
+        .bloco {
+            display: block;
+            background-color: #00ffffa6;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .linha {
+            display: inline;
+            background-color: #5dfd35;
+            padding: 5px;
+        }
+
+        .inline-bloco {
+            display: inline-block;
+            background-color: #ff8800c2;
+            padding: 10px;
+            margin-right: 5px;
+            margin-top: 10px;
+        }
+
+        /* Layout com Flexbox */
+        .flex-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .flex-item {
+            flex: 1;
+            background-color: #cf2626;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Layout com Grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 100px);
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .grid-item {
+            background-color: #cd57e2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Trabalho de HTML e CSS | Layout com Grid, Display e Flexbox</h1>
+    <p><strong>Aluno:</strong> Fabrício Matos De Sousa - ADS<br>
+    
+
+    <h2>1. Exemplos de display</h2>
+    <div class="exemplo-display">
+        <div class="bloco">ELEMENTO COM DISPLAY: BLOCK</div>
+        <span class="linha">ELEMENTO INLINE</span>
+        <span class="linha">OUTRO INLINE</span>
+        <div>
+            <div class="inline-bloco">INLINE-BLOCK 1</div>
+            <div class="inline-bloco">INLINE-BLOCK 2</div>
+            <div class="inline-bloco">INLINE-BLOCK 3</div>
+        </div>
+    </div>
+
+    <h2>2. Layout com Flexbox</h2>
+    <div class="flex-container">
+        <div class="flex-item">CAIXA DE NÚMERO 1</div>
+        <div class="flex-item">CAIXA DE NÚMERO 2</div>
+        <div class="flex-item">CAIXA DE NÚMERO 3</div>
+    </div>
+
+    <h2>3. Layout com Grid</h2>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+
+</body>
+</html>
