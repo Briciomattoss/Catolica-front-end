@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Equipe - Tech Index</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    .wrapper {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Tech Index</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="tecnologia.html">Tecnologias</a></li>
+            <li class="nav-item"><a class="nav-link active" href="equipe.html">Equipe</a></li>
+            <li class="nav-item"><a class="nav-link" href="projeto.html">Projetos</a></li>
+            <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container" style="padding-top: 100px; padding-bottom: 40px;">
+      <h2 class="text-primary mb-4">Nossa Equipe</h2>
+
+      <div class="row g-4">
+        <!-- Membro 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm text-center">
+            <img src="https://cdn-images.dzcdn.net/images/artist/78440a31df828d17f4e4f0bb6e77ee61/1900x1900-000000-80-0-0.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="João Silva" style="width: 150px; height: 150px; object-fit: cover;" />
+            <div class="card-body">
+              <h5 class="card-title">Fabricio Matos</h5>
+              <p class="card-text">Desenvolvedor Front-end</p>
+              <p class="card-text"><small>Especialista em React, HTML, CSS e UX design.</small></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Membro 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm text-center">
+            <img src="https://i.pinimg.com/736x/be/a7/89/bea789aa8b8db13fe6234cc15b4219e4.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Pedro Henrique" style="width: 150px; height: 150px; object-fit: cover;" />
+            <div class="card-body">
+              <h5 class="card-title">Pedro Henrique</h5>
+              <p class="card-text">Desenvolvedora Back-end</p>
+              <p class="card-text"><small>Experiência com Node.js, bancos de dados e API REST.</small></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Membro 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm text-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqqRCObQ6NDA7Ixs5RlWBfYPoGz-4kQrt7ApDaFfpqsABefeZPmq07uOc0UOE0SsapsKE&usqp=CAU" class="card-img-top rounded-circle mx-auto mt-3" alt="Gustavo Alexandre" style="width: 150px; height: 150px; object-fit: cover;" />
+            <div class="card-body">
+              <h5 class="card-title">Gustavo Alexandre</h5>
+              <p class="card-text">Gerente de Projetos</p>
+              <p class="card-text"><small>Coordena equipes, planeja sprints e entrega resultados.</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Membro 4 -->
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm text-center">
+            <img src="https://i0.wp.com/surgiu.com.br/wp-content/uploads/2016/12/Mc-Gorila-e1481744524345.jpg?resize=516%2C402g" class="card-img-top rounded-circle mx-auto mt-3" alt="Gabriel Mesquita" style="width: 150px; height: 150px; object-fit: cover;" />
+            <div class="card-body">
+              <h5 class="card-title">Gabriel Mesquita</h5>
+              <p class="card-text">Gerente de Projetos</p>
+              <p class="card-text"><small>Coordena equipes, planeja sprints e entrega resultados.</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="bg-dark text-light py-4">
+      <div class="container text-center">
+        <p class="mb-1">&copy; 2025 Tech Index. Todos os direitos reservados.</p>
+        <small>Desenvolvido por sua equipe de tecnologia favorita.</small>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

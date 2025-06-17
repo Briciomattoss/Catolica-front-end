@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contato - Tech Index</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    .wrapper {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Tech Index</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="tecnologia.html">Tecnologias</a></li>
+            <li class="nav-item"><a class="nav-link" href="equipe.html">Equipe</a></li>
+            <li class="nav-item"><a class="nav-link" href="projeto.html">Projetos</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container" style="padding-top: 100px; padding-bottom: 40px; max-width: 600px;">
+      <h2 class="text-primary mb-4">Fale Conosco</h2>
+
+      <form>
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" placeholder="Seu nome" required />
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" placeholder="seu@email.com" required />
+        </div>
+
+        <div class="mb-3">
+          <label for="assunto" class="form-label">Assunto</label>
+          <input type="text" class="form-control" id="assunto" placeholder="Motivo do contato" required />
+        </div>
+
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea class="form-control" id="mensagem" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+      </form>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="bg-dark text-light py-4">
+      <div class="container text-center">
+        <p class="mb-1">&copy; 2025 Tech Index. Todos os direitos reservados.</p>
+        <small>Desenvolvido por sua equipe de tecnologia favorita.</small>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
