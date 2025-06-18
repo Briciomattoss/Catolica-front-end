@@ -1,114 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projetos - Tech Index</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projetos - Tech Index</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-    }
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
 
-    .wrapper {
-      min-height: 100%;
-      display: flex;
-      flex-direction: column;
-    }
+      .wrapper {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
 
-    main {
-      flex: 1;
-    }
-  </style>
-</head>
-<body>
-  <div class="wrapper">
-
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Tech Index</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
-            <li class="nav-item"><a class="nav-link" href="tecnologia.html">Tecnologias</a></li>
-            <li class="nav-item"><a class="nav-link" href="equipe.html">Equipe</a></li>
-            <li class="nav-item"><a class="nav-link" href="projeto.html">Projetos</a></li>
-            <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-          </ul>
+      main {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Tech Index</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Alternar navegação"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tecnologia.html">Tecnologias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="equipe.html">Equipe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projeto.html">Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
+      <main class="container" style="padding-top: 100px; padding-bottom: 40px">
+        <h2 class="text-primary mb-4">Nossos Projetos</h2>
 
-    <main class="container" style="padding-top: 100px; padding-bottom: 40px;">
-      <h2 class="text-primary mb-4">Nossos Projetos</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="Projeto_Alpha.jpg"
+                class="card-img-top"
+                alt="Projeto Alpha"
+                onclick="ShowInfo(this)"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Projeto Alpha</h5>
+                <p class="card-text">
+                  Automação residencial com controle por voz.
+                </p>
+              </div>
+            </div>
+          </div>
 
-      <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="Projeto_Beta.jpg"
+                class="card-img-top"
+                alt="Projeto Beta"
+                onclick="ShowInfo(this)"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Projeto Beta</h5>
+                <p class="card-text">App de monitoramento de saúde.</p>
+              </div>
+            </div>
+          </div>
 
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 shadow-sm">
-            <img src="https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-eab8-61f7-afeb-4d35068c798f/raw?se=2025-06-17T00%3A24%3A21Z&sp=r&sv=2024-08-04&sr=b&scid=045c066f-5dc6-5c36-a6b7-20d9882f4401&skoid=04233560-0ad7-493e-8bf0-1347c317d021&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-16T19%3A57%3A21Z&ske=2025-06-17T19%3A57%3A21Z&sks=b&skv=2024-08-04&sig=kvmmN3UazJ4RsJs7hljKpF9%2B3y7jUe6a4z9KCafeO3U%3D" class="card-img-top" alt="Projeto Alpha" />
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Projeto Alpha</h5>
-              <p class="card-text">Automação residencial com controle por voz.</p>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="Projeto_Gamma.jpg"
+                class="card-img-top"
+                alt="Projeto Gamma"
+                onclick="ShowInfo(this)"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Projeto Gamma</h5>
+                <p class="card-text">Plataforma de gerenciamento de tarefas.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="Projeto_Delta.jpg"
+                class="card-img-top"
+                alt="Projeto Delta"
+                onclick="ShowInfo(this)"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Projeto Delta</h5>
+                <p class="card-text">Dashboard com visualização de dados.</p>
+              </div>
             </div>
           </div>
         </div>
+      </main>
 
-
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 shadow-sm">
-            <img src="https://sdmntprwestus3.oaiusercontent.com/files/00000000-73a4-61fd-99f3-bcd03ea1500e/raw?se=2025-06-17T00%3A28%3A13Z&sp=r&sv=2024-08-04&sr=b&scid=db0d23f9-312c-5ab7-9476-29d14e7aa54d&skoid=04233560-0ad7-493e-8bf0-1347c317d021&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-16T00%3A34%3A49Z&ske=2025-06-17T00%3A34%3A49Z&sks=b&skv=2024-08-04&sig=ySDnm1lRl7KRB/szuKXAuPMAhBAqu7BDjOfUL4jiX2I%3D" class="card-img-top" alt="Projeto Beta" />
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Projeto Beta</h5>
-              <p class="card-text">App de monitoramento de saúde.</p>
-            </div>
-          </div>
+      <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+          <p class="mb-1">
+            &copy; 2025 Tech Index. Todos os direitos reservados.
+          </p>
+          <small>Desenvolvido por sua equipe de tecnologia favorita.</small>
         </div>
+      </footer>
+    </div>
 
-
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 shadow-sm">
-            <img src="https://sdmntprwestus2.oaiusercontent.com/files/00000000-48ac-61f8-b223-e0baf0455a69/raw?se=2025-06-17T00%3A29%3A44Z&sp=r&sv=2024-08-04&sr=b&scid=10d1191b-644e-5da8-b9d7-90f6400724b7&skoid=04233560-0ad7-493e-8bf0-1347c317d021&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-16T19%3A57%3A37Z&ske=2025-06-17T19%3A57%3A37Z&sks=b&skv=2024-08-04&sig=Lcb2bGOW6KUQOsw8rhv2T58/izJFKl2V/8tC19q0NDM%3D" class="card-img-top" alt="Projeto Gamma" />
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Projeto Gamma</h5>
-              <p class="card-text">Plataforma de gerenciamento de tarefas.</p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 shadow-sm">
-            <img src="https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-1ef0-61f7-bf12-3219824a1807/raw?se=2025-06-17T00%3A31%3A45Z&sp=r&sv=2024-08-04&sr=b&scid=4f0a069e-3283-54bf-9ccc-bab88222ad43&skoid=04233560-0ad7-493e-8bf0-1347c317d021&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-16T20%3A09%3A11Z&ske=2025-06-17T20%3A09%3A11Z&sks=b&skv=2024-08-04&sig=TAZ2iRTQElwDPoVFrnJaPH1cU7s265J9gnRatlvMrh0%3D" class="card-img-top" alt="Projeto Delta" />
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Projeto Delta</h5>
-              <p class="card-text">Dashboard com visualização de dados.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-
-    <footer class="bg-dark text-light py-4">
-      <div class="container text-center">
-        <p class="mb-1">&copy; 2025 Tech Index. Todos os direitos reservados.</p>
-        <small>Desenvolvido por sua equipe de tecnologia favorita.</small>
-      </div>
-    </footer>
-
-  </div>
-
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
-</body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
